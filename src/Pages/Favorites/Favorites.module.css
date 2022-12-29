@@ -1,0 +1,64 @@
+.favoritesWrap {
+    background: #fff;
+}
+
+.favoritesContent {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 700px;
+}
+
+.favoritesContent h3 {
+    padding: 30px 0;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.emptyFav p {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cartWrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    width: 100%;
+    grid-auto-rows: auto;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.catalogBtn {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #4f4e4e;
+    border: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.catalogBtn:hover {
+    background-color: #333333;
+}
+
+.emptyFav {
+    text-align: center;
+}
+
+@media (max-width: 770px) {
+    .card {
+        max-width: 12rem;
+    }
+    
+    .itemImg {
+        width: 12rem;
+        height: 12rem;    
+    }  
+}

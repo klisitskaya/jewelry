@@ -1,0 +1,119 @@
+.mainWrap {
+    background-image: url(/src/assets/img/bgc.png);
+    min-height: 25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.mainWrap img {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    transition: all 0.5s ease;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+  }
+
+.mainContent {
+    width: 80%;
+    margin: 0 auto;
+    color: #FFFFFF;
+    padding: 10% 0;   
+}
+
+.mainContent h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.mainContent h3 {
+    font-size: 30px;
+    padding: 25px 0;
+    margin-bottom: 15px;
+}
+
+.catalogBtn {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #4f4e4e;
+    border: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.catalogBtn:hover {
+    background-color: #333333;
+}
+
+.aboutUsContent {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 6rem 0;  
+}
+
+.aboutUsContent h2 {
+    font-size: 55px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.aboutUsContent p, .aboutUsContent div {
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.aboutUsContent p {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 770px) {
+    .mainContent h1 {   
+        font-size: 40px; 
+    }
+
+    .mainWrap img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .aboutUsContent h2 {
+        font-size: 40px;
+    }
+
+    .aboutUsContent p, .aboutUsContent div {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .mainContent h1 {   
+        font-size: 40px; 
+    }
+    
+    .mainWrap img {
+        right: 50px;
+        bottom: 50px;
+    }
+}
+
+@media (max-width: 380px) {
+    .mainWrap {
+        text-align: center;
+    }
+
+    .mainWrap img {
+        display: none;
+    }
+}
